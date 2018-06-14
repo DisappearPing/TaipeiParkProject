@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tMT-Uo-6uW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View View Controller-->
+        <scene sceneID="DKz-6J-Sne">
+            <objects>
+                <viewController id="FNK-ae-ZVO" customClass="MapViewViewController" customModule="TaipeiParkProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Obo-Xd-wJR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ekd-Ju-Hs1">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <connections>
+                                    <outlet property="delegate" destination="FNK-ae-ZVO" id="nyu-7b-9UU"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ekd-Ju-Hs1" firstAttribute="trailing" secondItem="glU-uv-PjZ" secondAttribute="trailing" id="DRO-8J-L3I"/>
+                            <constraint firstItem="ekd-Ju-Hs1" firstAttribute="top" secondItem="glU-uv-PjZ" secondAttribute="top" id="Liy-Li-awc"/>
+                            <constraint firstItem="ekd-Ju-Hs1" firstAttribute="leading" secondItem="glU-uv-PjZ" secondAttribute="leading" id="bb6-9j-ta3"/>
+                            <constraint firstItem="ekd-Ju-Hs1" firstAttribute="bottom" secondItem="glU-uv-PjZ" secondAttribute="bottom" id="kQ9-1x-cDe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="glU-uv-PjZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="k7B-2t-1DX"/>
+                    <connections>
+                        <outlet property="mapView" destination="ekd-Ju-Hs1" id="zaW-Tx-jik"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kfo-b8-80B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="495.19999999999999" y="199.25037481259372"/>
+        </scene>
+        <!--地圖-->
+        <scene sceneID="l8M-zG-5hz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tMT-Uo-6uW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="1" title="地圖" id="wlH-zw-ZNy"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OGt-e4-1dN">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FNK-ae-ZVO" kind="relationship" relationship="rootViewController" id="cF1-b0-Vrx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Afc-DX-dUy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-242" y="199"/>
+        </scene>
+    </scenes>
+</document>

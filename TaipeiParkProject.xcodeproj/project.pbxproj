@@ -8,22 +8,50 @@
 
 /* Begin PBXBuildFile section */
 		22A9531E20CD7A7A00F90064 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9531D20CD7A7A00F90064 /* AppDelegate.swift */; };
-		22A9532020CD7A7A00F90064 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9531F20CD7A7A00F90064 /* ViewController.swift */; };
 		22A9532320CD7A7A00F90064 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A9532120CD7A7A00F90064 /* Main.storyboard */; };
 		22A9532620CD7A7A00F90064 /* TaipeiParkProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22A9532420CD7A7A00F90064 /* TaipeiParkProject.xcdatamodeld */; };
 		22A9532820CD7A7B00F90064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A9532720CD7A7B00F90064 /* Assets.xcassets */; };
 		22A9532B20CD7A7B00F90064 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A9532920CD7A7B00F90064 /* LaunchScreen.storyboard */; };
+		22A9533720CD7B6100F90064 /* ListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A9533620CD7B6100F90064 /* ListView.storyboard */; };
+		22A9533920CD7B7C00F90064 /* ListViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9533820CD7B7C00F90064 /* ListViewViewController.swift */; };
+		22A9533B20CD7BDF00F90064 /* MapViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9533A20CD7BDF00F90064 /* MapViewViewController.swift */; };
+		22A9533D20CD7BF100F90064 /* MapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A9533C20CD7BF100F90064 /* MapView.storyboard */; };
+		22A9533F20CD7C0900F90064 /* FavoriteView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A9533E20CD7C0900F90064 /* FavoriteView.storyboard */; };
+		22A9534120CD7C1D00F90064 /* FavoriteViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9534020CD7C1D00F90064 /* FavoriteViewViewController.swift */; };
+		22A9534520CD80B500F90064 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9534420CD80B400F90064 /* APIManager.swift */; };
+		22A9534720CE4BB700F90064 /* GetListResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9534620CE4BB700F90064 /* GetListResult.swift */; };
+		22A9534920CE4CC700F90064 /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9534820CE4CC700F90064 /* Park.swift */; };
+		22A9534B20CE4D2200F90064 /* GetListMiddleResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9534A20CE4D2200F90064 /* GetListMiddleResult.swift */; };
+		22A9534F20CE4F9600F90064 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9534E20CE4F9600F90064 /* APIError.swift */; };
+		22A9535120CFC23C00F90064 /* GetListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9535020CFC23C00F90064 /* GetListRequest.swift */; };
+		22A9535420CFE18300F90064 /* DictionaryEncodableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9535320CFE18300F90064 /* DictionaryEncodableProtocol.swift */; };
+		22A9535620CFEC6200F90064 /* ListViewBasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9535520CFEC6100F90064 /* ListViewBasicTableViewCell.swift */; };
+		22A9535920CFF67F00F90064 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9535820CFF67E00F90064 /* UIImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		22A9531A20CD7A7A00F90064 /* TaipeiParkProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaipeiParkProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A9531D20CD7A7A00F90064 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22A9531F20CD7A7A00F90064 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		22A9532220CD7A7A00F90064 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22A9532520CD7A7A00F90064 /* TaipeiParkProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaipeiParkProject.xcdatamodel; sourceTree = "<group>"; };
 		22A9532720CD7A7B00F90064 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22A9532A20CD7A7B00F90064 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22A9532C20CD7A7B00F90064 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A9533620CD7B6100F90064 /* ListView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListView.storyboard; sourceTree = "<group>"; };
+		22A9533820CD7B7C00F90064 /* ListViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewViewController.swift; sourceTree = "<group>"; };
+		22A9533A20CD7BDF00F90064 /* MapViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewViewController.swift; sourceTree = "<group>"; };
+		22A9533C20CD7BF100F90064 /* MapView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapView.storyboard; sourceTree = "<group>"; };
+		22A9533E20CD7C0900F90064 /* FavoriteView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavoriteView.storyboard; sourceTree = "<group>"; };
+		22A9534020CD7C1D00F90064 /* FavoriteViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewViewController.swift; sourceTree = "<group>"; };
+		22A9534420CD80B400F90064 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		22A9534620CE4BB700F90064 /* GetListResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetListResult.swift; sourceTree = "<group>"; };
+		22A9534820CE4CC700F90064 /* Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
+		22A9534A20CE4D2200F90064 /* GetListMiddleResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetListMiddleResult.swift; sourceTree = "<group>"; };
+		22A9534E20CE4F9600F90064 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		22A9535020CFC23C00F90064 /* GetListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetListRequest.swift; sourceTree = "<group>"; };
+		22A9535320CFE18300F90064 /* DictionaryEncodableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryEncodableProtocol.swift; sourceTree = "<group>"; };
+		22A9535520CFEC6100F90064 /* ListViewBasicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewBasicTableViewCell.swift; sourceTree = "<group>"; };
+		22A9535820CFF67E00F90064 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +85,92 @@
 			isa = PBXGroup;
 			children = (
 				22A9531D20CD7A7A00F90064 /* AppDelegate.swift */,
-				22A9531F20CD7A7A00F90064 /* ViewController.swift */,
-				22A9532120CD7A7A00F90064 /* Main.storyboard */,
+				22A9535720CFF65F00F90064 /* Extension */,
+				22A9535220CFE15600F90064 /* Protocol */,
+				22A9534220CD7C2E00F90064 /* Manager */,
+				22A9534320CD7C6400F90064 /* Model */,
+				22A9533320CD7AEC00F90064 /* ListView */,
+				22A9533420CD7B0100F90064 /* MapView */,
+				22A9533520CD7B1A00F90064 /* FavoriteView */,
+				22A9533220CD7ADB00F90064 /* Storyboard */,
 				22A9532720CD7A7B00F90064 /* Assets.xcassets */,
-				22A9532920CD7A7B00F90064 /* LaunchScreen.storyboard */,
 				22A9532C20CD7A7B00F90064 /* Info.plist */,
 				22A9532420CD7A7A00F90064 /* TaipeiParkProject.xcdatamodeld */,
 			);
 			path = TaipeiParkProject;
+			sourceTree = "<group>";
+		};
+		22A9533220CD7ADB00F90064 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				22A9532920CD7A7B00F90064 /* LaunchScreen.storyboard */,
+				22A9532120CD7A7A00F90064 /* Main.storyboard */,
+				22A9533620CD7B6100F90064 /* ListView.storyboard */,
+				22A9533C20CD7BF100F90064 /* MapView.storyboard */,
+				22A9533E20CD7C0900F90064 /* FavoriteView.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		22A9533320CD7AEC00F90064 /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				22A9533820CD7B7C00F90064 /* ListViewViewController.swift */,
+				22A9535520CFEC6100F90064 /* ListViewBasicTableViewCell.swift */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		22A9533420CD7B0100F90064 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				22A9533A20CD7BDF00F90064 /* MapViewViewController.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		22A9533520CD7B1A00F90064 /* FavoriteView */ = {
+			isa = PBXGroup;
+			children = (
+				22A9534020CD7C1D00F90064 /* FavoriteViewViewController.swift */,
+			);
+			path = FavoriteView;
+			sourceTree = "<group>";
+		};
+		22A9534220CD7C2E00F90064 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				22A9534420CD80B400F90064 /* APIManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		22A9534320CD7C6400F90064 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22A9534620CE4BB700F90064 /* GetListResult.swift */,
+				22A9534A20CE4D2200F90064 /* GetListMiddleResult.swift */,
+				22A9534820CE4CC700F90064 /* Park.swift */,
+				22A9534E20CE4F9600F90064 /* APIError.swift */,
+				22A9535020CFC23C00F90064 /* GetListRequest.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22A9535220CFE15600F90064 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				22A9535320CFE18300F90064 /* DictionaryEncodableProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		22A9535720CFF65F00F90064 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				22A9535820CFF67E00F90064 /* UIImageExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,8 +233,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				22A9532B20CD7A7B00F90064 /* LaunchScreen.storyboard in Resources */,
+				22A9533720CD7B6100F90064 /* ListView.storyboard in Resources */,
 				22A9532820CD7A7B00F90064 /* Assets.xcassets in Resources */,
+				22A9533D20CD7BF100F90064 /* MapView.storyboard in Resources */,
 				22A9532320CD7A7A00F90064 /* Main.storyboard in Resources */,
+				22A9533F20CD7C0900F90064 /* FavoriteView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,9 +248,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22A9534B20CE4D2200F90064 /* GetListMiddleResult.swift in Sources */,
+				22A9535620CFEC6200F90064 /* ListViewBasicTableViewCell.swift in Sources */,
+				22A9534520CD80B500F90064 /* APIManager.swift in Sources */,
+				22A9535120CFC23C00F90064 /* GetListRequest.swift in Sources */,
 				22A9532620CD7A7A00F90064 /* TaipeiParkProject.xcdatamodeld in Sources */,
-				22A9532020CD7A7A00F90064 /* ViewController.swift in Sources */,
+				22A9534F20CE4F9600F90064 /* APIError.swift in Sources */,
+				22A9534920CE4CC700F90064 /* Park.swift in Sources */,
 				22A9531E20CD7A7A00F90064 /* AppDelegate.swift in Sources */,
+				22A9534720CE4BB700F90064 /* GetListResult.swift in Sources */,
+				22A9535920CFF67F00F90064 /* UIImageExtension.swift in Sources */,
+				22A9534120CD7C1D00F90064 /* FavoriteViewViewController.swift in Sources */,
+				22A9533B20CD7BDF00F90064 /* MapViewViewController.swift in Sources */,
+				22A9533920CD7B7C00F90064 /* ListViewViewController.swift in Sources */,
+				22A9535420CFE18300F90064 /* DictionaryEncodableProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +401,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6A7U4USEQ8;
 				INFOPLIST_FILE = TaipeiParkProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Hsiao.TaipeiParkProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -296,6 +417,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6A7U4USEQ8;
 				INFOPLIST_FILE = TaipeiParkProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Hsiao.TaipeiParkProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
