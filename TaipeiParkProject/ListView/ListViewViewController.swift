@@ -22,12 +22,14 @@ class ListViewViewController: UIViewController {
     var selectedPark: Park?
     var cache = NSCache<AnyObject, AnyObject>()
     var isLoading = false
+    var toDetailPark: Park?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
+        hidesBottomBarWhenPushed = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -50,16 +52,19 @@ class ListViewViewController: UIViewController {
     }
     
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "toDetail",
+            let toDetailPark = toDetailPark {
+            let destinationVC = segue.destination as! DetailParkInfoViewController
+            destinationVC.park = toDetailPark
+        }
     }
-    */
-
 }
 
 // MARK: Custom Method
@@ -201,6 +206,11 @@ extension ListViewViewController: UITableViewDataSource {
         }
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        toDetailPark = parks[indexPath.row]
+        performSegue(withIdentifier: "toDetail", sender: nil)
     }
 }
 

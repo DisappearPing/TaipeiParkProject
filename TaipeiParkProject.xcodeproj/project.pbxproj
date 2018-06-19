@@ -28,6 +28,18 @@
 		22A9535620CFEC6200F90064 /* ListViewBasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9535520CFEC6100F90064 /* ListViewBasicTableViewCell.swift */; };
 		22A9535920CFF67F00F90064 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9535820CFF67E00F90064 /* UIImageExtension.swift */; };
 		22A9535B20D7BD9200F90064 /* FavoritePark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9535A20D7BD9000F90064 /* FavoritePark.swift */; };
+		22A9535D20D8EB2200F90064 /* DetailParkInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A9535C20D8EB2000F90064 /* DetailParkInfo.storyboard */; };
+		22A9536020D9056300F90064 /* DetailParkInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9535F20D9056300F90064 /* DetailParkInfoViewController.swift */; };
+		22A9536220D90B5C00F90064 /* GetFacilitiesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9536120D90B5C00F90064 /* GetFacilitiesRequest.swift */; };
+		22A9536420D90C1800F90064 /* GetFacilitiesResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9536320D90C1800F90064 /* GetFacilitiesResult.swift */; };
+		22A9536620D90C4F00F90064 /* GetFacilitiesMiddleResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9536520D90C4F00F90064 /* GetFacilitiesMiddleResult.swift */; };
+		22A9536A20D90D0400F90064 /* Facility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9536920D90D0400F90064 /* Facility.swift */; };
+		22A9536C20D9218B00F90064 /* SpotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9536B20D9218B00F90064 /* SpotViewController.swift */; };
+		22A9536E20D9220B00F90064 /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9536D20D9220B00F90064 /* Spot.swift */; };
+		22A9537020D9237900F90064 /* GetSpotsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9536F20D9237900F90064 /* GetSpotsRequest.swift */; };
+		22A9537220D923DB00F90064 /* GetSpotsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9537120D923DB00F90064 /* GetSpotsResult.swift */; };
+		22A9537420D9243700F90064 /* GetSpotsMiddleResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9537320D9243700F90064 /* GetSpotsMiddleResult.swift */; };
+		22A9537620D9259300F90064 /* SpotCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9537520D9259300F90064 /* SpotCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +66,18 @@
 		22A9535520CFEC6100F90064 /* ListViewBasicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewBasicTableViewCell.swift; sourceTree = "<group>"; };
 		22A9535820CFF67E00F90064 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		22A9535A20D7BD9000F90064 /* FavoritePark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePark.swift; sourceTree = "<group>"; };
+		22A9535C20D8EB2000F90064 /* DetailParkInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailParkInfo.storyboard; sourceTree = "<group>"; };
+		22A9535F20D9056300F90064 /* DetailParkInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailParkInfoViewController.swift; sourceTree = "<group>"; };
+		22A9536120D90B5C00F90064 /* GetFacilitiesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFacilitiesRequest.swift; sourceTree = "<group>"; };
+		22A9536320D90C1800F90064 /* GetFacilitiesResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFacilitiesResult.swift; sourceTree = "<group>"; };
+		22A9536520D90C4F00F90064 /* GetFacilitiesMiddleResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFacilitiesMiddleResult.swift; sourceTree = "<group>"; };
+		22A9536920D90D0400F90064 /* Facility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facility.swift; sourceTree = "<group>"; };
+		22A9536B20D9218B00F90064 /* SpotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotViewController.swift; sourceTree = "<group>"; };
+		22A9536D20D9220B00F90064 /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
+		22A9536F20D9237900F90064 /* GetSpotsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSpotsRequest.swift; sourceTree = "<group>"; };
+		22A9537120D923DB00F90064 /* GetSpotsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSpotsResult.swift; sourceTree = "<group>"; };
+		22A9537320D9243700F90064 /* GetSpotsMiddleResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSpotsMiddleResult.swift; sourceTree = "<group>"; };
+		22A9537520D9259300F90064 /* SpotCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +118,7 @@
 				22A9533320CD7AEC00F90064 /* ListView */,
 				22A9533420CD7B0100F90064 /* MapView */,
 				22A9533520CD7B1A00F90064 /* FavoriteView */,
+				22A9535E20D9052D00F90064 /* DetailParkInfo */,
 				22A9533220CD7ADB00F90064 /* Storyboard */,
 				22A9532720CD7A7B00F90064 /* Assets.xcassets */,
 				22A9532C20CD7A7B00F90064 /* Info.plist */,
@@ -110,6 +135,7 @@
 				22A9533620CD7B6100F90064 /* ListView.storyboard */,
 				22A9533C20CD7BF100F90064 /* MapView.storyboard */,
 				22A9533E20CD7C0900F90064 /* FavoriteView.storyboard */,
+				22A9535C20D8EB2000F90064 /* DetailParkInfo.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -150,12 +176,13 @@
 		22A9534320CD7C6400F90064 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				22A9534620CE4BB700F90064 /* GetListResult.swift */,
-				22A9534A20CE4D2200F90064 /* GetListMiddleResult.swift */,
+				22A9536720D90CBF00F90064 /* Request */,
+				22A9536820D90CD600F90064 /* ResponseModel */,
 				22A9534820CE4CC700F90064 /* Park.swift */,
 				22A9535A20D7BD9000F90064 /* FavoritePark.swift */,
+				22A9536920D90D0400F90064 /* Facility.swift */,
+				22A9536D20D9220B00F90064 /* Spot.swift */,
 				22A9534E20CE4F9600F90064 /* APIError.swift */,
-				22A9535020CFC23C00F90064 /* GetListRequest.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,6 +201,39 @@
 				22A9535820CFF67E00F90064 /* UIImageExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		22A9535E20D9052D00F90064 /* DetailParkInfo */ = {
+			isa = PBXGroup;
+			children = (
+				22A9535F20D9056300F90064 /* DetailParkInfoViewController.swift */,
+				22A9537520D9259300F90064 /* SpotCollectionViewCell.swift */,
+				22A9536B20D9218B00F90064 /* SpotViewController.swift */,
+			);
+			path = DetailParkInfo;
+			sourceTree = "<group>";
+		};
+		22A9536720D90CBF00F90064 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				22A9535020CFC23C00F90064 /* GetListRequest.swift */,
+				22A9536120D90B5C00F90064 /* GetFacilitiesRequest.swift */,
+				22A9536F20D9237900F90064 /* GetSpotsRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		22A9536820D90CD600F90064 /* ResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				22A9534620CE4BB700F90064 /* GetListResult.swift */,
+				22A9534A20CE4D2200F90064 /* GetListMiddleResult.swift */,
+				22A9536320D90C1800F90064 /* GetFacilitiesResult.swift */,
+				22A9536520D90C4F00F90064 /* GetFacilitiesMiddleResult.swift */,
+				22A9537120D923DB00F90064 /* GetSpotsResult.swift */,
+				22A9537320D9243700F90064 /* GetSpotsMiddleResult.swift */,
+			);
+			path = ResponseModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22A9535D20D8EB2200F90064 /* DetailParkInfo.storyboard in Resources */,
 				22A9532B20CD7A7B00F90064 /* LaunchScreen.storyboard in Resources */,
 				22A9533720CD7B6100F90064 /* ListView.storyboard in Resources */,
 				22A9532820CD7A7B00F90064 /* Assets.xcassets in Resources */,
@@ -253,19 +314,30 @@
 			files = (
 				22A9534B20CE4D2200F90064 /* GetListMiddleResult.swift in Sources */,
 				22A9535620CFEC6200F90064 /* ListViewBasicTableViewCell.swift in Sources */,
+				22A9536A20D90D0400F90064 /* Facility.swift in Sources */,
+				22A9536220D90B5C00F90064 /* GetFacilitiesRequest.swift in Sources */,
+				22A9537420D9243700F90064 /* GetSpotsMiddleResult.swift in Sources */,
 				22A9534520CD80B500F90064 /* APIManager.swift in Sources */,
 				22A9535120CFC23C00F90064 /* GetListRequest.swift in Sources */,
 				22A9532620CD7A7A00F90064 /* TaipeiParkProject.xcdatamodeld in Sources */,
+				22A9537020D9237900F90064 /* GetSpotsRequest.swift in Sources */,
 				22A9534F20CE4F9600F90064 /* APIError.swift in Sources */,
 				22A9534920CE4CC700F90064 /* Park.swift in Sources */,
+				22A9536420D90C1800F90064 /* GetFacilitiesResult.swift in Sources */,
 				22A9535B20D7BD9200F90064 /* FavoritePark.swift in Sources */,
 				22A9531E20CD7A7A00F90064 /* AppDelegate.swift in Sources */,
 				22A9534720CE4BB700F90064 /* GetListResult.swift in Sources */,
+				22A9536C20D9218B00F90064 /* SpotViewController.swift in Sources */,
 				22A9535920CFF67F00F90064 /* UIImageExtension.swift in Sources */,
 				22A9534120CD7C1D00F90064 /* FavoriteViewViewController.swift in Sources */,
+				22A9537620D9259300F90064 /* SpotCollectionViewCell.swift in Sources */,
 				22A9533B20CD7BDF00F90064 /* MapViewViewController.swift in Sources */,
+				22A9536620D90C4F00F90064 /* GetFacilitiesMiddleResult.swift in Sources */,
+				22A9536020D9056300F90064 /* DetailParkInfoViewController.swift in Sources */,
+				22A9536E20D9220B00F90064 /* Spot.swift in Sources */,
 				22A9533920CD7B7C00F90064 /* ListViewViewController.swift in Sources */,
 				22A9535420CFE18300F90064 /* DictionaryEncodableProtocol.swift in Sources */,
+				22A9537220D923DB00F90064 /* GetSpotsResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

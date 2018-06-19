@@ -134,16 +134,25 @@
                     <navigationItem key="navigationItem" title="列表" id="QBJ-Xx-nKL"/>
                     <connections>
                         <outlet property="parkTableView" destination="ccN-IT-HNe" id="30K-bL-RjG"/>
+                        <segue destination="Ka4-eQ-IZd" kind="show" identifier="toDetail" id="ZU6-Fe-jU9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XS8-os-CiL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="53.600000000000001" y="110.19490254872565"/>
         </scene>
+        <!--DetailParkInfo-->
+        <scene sceneID="aiP-Bs-J9Y">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DetailParkInfo" id="Ka4-eQ-IZd" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wua-Mp-fMc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="607" y="111"/>
+        </scene>
         <!--列表-->
         <scene sceneID="HAu-aH-DVw">
             <objects>
-                <navigationController title="列表" automaticallyAdjustsScrollViewInsets="NO" id="ICf-i4-z2z" sceneMemberID="viewController">
+                <navigationController title="列表" automaticallyAdjustsScrollViewInsets="NO" hidesBottomBarWhenPushed="YES" id="ICf-i4-z2z" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="列表" id="bQJ-UJ-7sr"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
