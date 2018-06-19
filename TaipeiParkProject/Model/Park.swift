@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import MapKit
 
-struct Park: Codable {
+class Park: NSObject, Codable {
     let administrativeArea : String?
     let area : String?
     let image : String?
@@ -40,7 +41,25 @@ struct Park: Codable {
         case yearBuilt = "YearBuilt"
         case id = "_id"
     }
-    init(from decoder: Decoder) throws {
+    
+    init(from favoritePark: FavoritePark) {
+        self.administrativeArea = favoritePark.administrativeArea
+        self.area = favoritePark.area
+        self.image = favoritePark.image
+        self.introduction = favoritePark.introduction
+        self.latitude = favoritePark.latitude
+        self.location = favoritePark.location
+        self.longitude = favoritePark.longitude
+        self.manageTelephone = favoritePark.manageTelephone
+        self.managementName = favoritePark.managementName
+        self.openTime = favoritePark.openTime
+        self.parkName = favoritePark.parkName
+        self.parkType = favoritePark.parkType
+        self.yearBuilt = favoritePark.yearBuilt
+        self.id = favoritePark.id
+    }
+    
+    required init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         administrativeArea = try values.decodeIfPresent(String.self, forKey: .administrativeArea)
         area = try values.decodeIfPresent(String.self, forKey: .area)
@@ -56,5 +75,19 @@ struct Park: Codable {
         parkType = try values.decodeIfPresent(String.self, forKey: .parkType)
         yearBuilt = try values.decodeIfPresent(String.self, forKey: .yearBuilt)
         id = try values.decodeIfPresent(Int.self, forKey: .id)
+    }
+}
+
+extension Park: MKAnnotation {
+    public var coordinate: CLLocationCoordinate2D {
+        return CLLocationCoordinate2D(latitude: Double(latitude ?? "") ?? 0.0, longitude: Double(longitude ?? "") ?? 0.0)
+    }
+    
+    public var title: String? {
+       return parkName
+    }
+    
+    public var subtitle: String? {
+        return administrativeArea
     }
 }

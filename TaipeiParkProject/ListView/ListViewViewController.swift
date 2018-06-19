@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import CoreData
 
 class ListViewViewController: UIViewController {
 
     @IBOutlet weak var parkTableView: UITableView!
     
+    lazy var managedObjectContext: NSManagedObjectContext = {
+        (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    }()
+    
     var parks = [Park]()
+    var favoriteParks = [FavoritePark]()
     var selectedPark: Park?
     var cache = NSCache<AnyObject, AnyObject>()
     var isLoading = false
@@ -26,8 +32,12 @@ class ListViewViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
+        
         getListDataWithPage(0)
+        
+        // get favorite parks from coreData
+        
+       fetchFavoriteParks()
     }
 
     override func didReceiveMemoryWarning() {
@@ -93,6 +103,62 @@ extension ListViewViewController {
         selectedPark = parks[sender.tag]
         self.tabBarController?.selectedIndex = 1
     }
+    
+    @objc func addFavoritePark(_ sender: UIButton) {
+        let selectedPark = parks[sender.tag]
+        let favoritePark: FavoritePark
+        let existFavoriteParks = favoriteParks.filter() {
+            $0.id == selectedPark.id ?? -1
+        }
+        
+        if existFavoriteParks.count != 0,
+            let toDeletePark = existFavoriteParks.first {
+            // delete
+            managedObjectContext.delete(toDeletePark)
+        } else {
+        
+        // add
+        
+            favoritePark = FavoritePark(context: managedObjectContext)
+            favoritePark.administrativeArea = selectedPark.administrativeArea ?? ""
+            favoritePark.area = selectedPark.area ?? ""
+            favoritePark.id = Int(selectedPark.id ?? -1)
+            favoritePark.image = selectedPark.image ?? ""
+            favoritePark.introduction = selectedPark.introduction ?? ""
+            favoritePark.latitude = selectedPark.latitude ?? ""
+            favoritePark.longitude = selectedPark.longitude ?? ""
+            favoritePark.managementName = selectedPark.managementName ?? ""
+            favoritePark.manageTelephone = selectedPark.manageTelephone ?? ""
+            favoritePark.openTime = selectedPark.openTime ?? ""
+            favoritePark.parkName = selectedPark.parkName ?? ""
+            favoritePark.parkType = selectedPark.parkType ?? ""
+            favoritePark.yearBuilt = selectedPark.yearBuilt ?? ""
+        
+        }
+            
+        do {
+            try managedObjectContext.save()
+//            afterDelay(0.6) {
+//                hudView.hide()
+//                self.navigationController?.popViewController(animated: true)
+//            }
+            print("coreData saved !!")
+            fetchFavoriteParks()
+            parkTableView.reloadRows(at: [IndexPath(row: sender.tag, section: 0)], with: .automatic)
+        } catch {
+//            fatalCoreDataError(error)
+            print("coreData error : \(error)")
+        }
+    }
+    
+    func fetchFavoriteParks() {
+        let fetchRequest = NSFetchRequest<FavoritePark>(entityName: "FavoritePark")
+        do {
+            favoriteParks = try managedObjectContext.fetch(fetchRequest)
+        } catch {
+            print("fetch error = \(error)")
+        }
+    }
 }
 
 // MARK: UITableViewDataSource
@@ -109,17 +175,30 @@ extension ListViewViewController: UITableViewDataSource {
         cell.parkNameLabel.text = cellData.parkName
         cell.administrativeAreaLabel.text = cellData.administrativeArea
         cell.introductionLabel.text = cellData.introduction
-        if let cacheImage = cache.object(forKey: indexPath.row as AnyObject) as? UIImage {
+        if let cacheImage = cache.object(forKey: cellData.id as AnyObject) as? UIImage {
             cell.parkImageView.image = cacheImage
         } else {
-            cell.parkImageView.imageFromServerURL(urlString: cellData.image ?? "") {[unowned self] (image) in
-                guard let image = image else { return }
-                self.cache.setObject(image, forKey:  indexPath.row as AnyObject)
+            cell.parkImageView.imageFromServerURL(urlString: cellData.image ?? "") {[weak self] (image) in
+                guard let image = image, let aliveSelf = self else { return }
+                aliveSelf.cache.setObject(image, forKey: cellData.id as AnyObject)
             }
         }
         
         cell.mapButton.addTarget(self, action: #selector(cellMapButtonAction(_:)), for: .touchUpInside)
         cell.mapButton.tag = indexPath.row
+        
+        cell.favoriteStarButton.addTarget(self, action: #selector(addFavoritePark(_:)), for: .touchUpInside)
+        cell.favoriteStarButton.tag = indexPath.row
+        
+        if favoriteParks.contains(where: { (favoritePark) -> Bool in
+            favoritePark.id == cellData.id ?? -1
+        }) {
+            cell.favoriteStarButton.setTitle("★", for: .normal)
+            cell.favoriteStarButton.setTitleColor(UIColor.yellow, for: .normal)
+        } else {
+            cell.favoriteStarButton.setTitle("☆", for: .normal)
+            cell.favoriteStarButton.setTitleColor(UIColor.lightGray, for: .normal)
+        }
         
         return cell
     }

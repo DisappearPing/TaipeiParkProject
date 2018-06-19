@@ -27,6 +27,7 @@
 		22A9535420CFE18300F90064 /* DictionaryEncodableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9535320CFE18300F90064 /* DictionaryEncodableProtocol.swift */; };
 		22A9535620CFEC6200F90064 /* ListViewBasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9535520CFEC6100F90064 /* ListViewBasicTableViewCell.swift */; };
 		22A9535920CFF67F00F90064 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9535820CFF67E00F90064 /* UIImageExtension.swift */; };
+		22A9535B20D7BD9200F90064 /* FavoritePark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A9535A20D7BD9000F90064 /* FavoritePark.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		22A9535320CFE18300F90064 /* DictionaryEncodableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryEncodableProtocol.swift; sourceTree = "<group>"; };
 		22A9535520CFEC6100F90064 /* ListViewBasicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewBasicTableViewCell.swift; sourceTree = "<group>"; };
 		22A9535820CFF67E00F90064 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		22A9535A20D7BD9000F90064 /* FavoritePark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePark.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				22A9534620CE4BB700F90064 /* GetListResult.swift */,
 				22A9534A20CE4D2200F90064 /* GetListMiddleResult.swift */,
 				22A9534820CE4CC700F90064 /* Park.swift */,
+				22A9535A20D7BD9000F90064 /* FavoritePark.swift */,
 				22A9534E20CE4F9600F90064 /* APIError.swift */,
 				22A9535020CFC23C00F90064 /* GetListRequest.swift */,
 			);
@@ -255,6 +258,7 @@
 				22A9532620CD7A7A00F90064 /* TaipeiParkProject.xcdatamodeld in Sources */,
 				22A9534F20CE4F9600F90064 /* APIError.swift in Sources */,
 				22A9534920CE4CC700F90064 /* Park.swift in Sources */,
+				22A9535B20D7BD9200F90064 /* FavoritePark.swift in Sources */,
 				22A9531E20CD7A7A00F90064 /* AppDelegate.swift in Sources */,
 				22A9534720CE4BB700F90064 /* GetListResult.swift in Sources */,
 				22A9535920CFF67F00F90064 /* UIImageExtension.swift in Sources */,

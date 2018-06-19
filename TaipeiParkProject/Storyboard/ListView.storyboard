@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--List View View Controller-->
+        <!--列表-->
         <scene sceneID="HFx-Yc-DF8">
             <objects>
                 <viewController id="MgV-ad-lwC" customClass="ListViewViewController" customModule="TaipeiParkProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,8 +36,10 @@
                                                         <constraint firstAttribute="height" constant="36" id="C3y-fa-agG"/>
                                                         <constraint firstAttribute="width" constant="36" id="qdr-T3-qvZ"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="36"/>
-                                                    <state key="normal" title="☆"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="26"/>
+                                                    <state key="normal" title="☆">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyO-Tj-o7i">
                                                     <rect key="frame" x="319" y="60" width="40" height="30"/>
@@ -129,7 +131,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9xK-Vr-Emk"/>
                     </view>
-                    <navigationItem key="navigationItem" id="QBJ-Xx-nKL"/>
+                    <navigationItem key="navigationItem" title="列表" id="QBJ-Xx-nKL"/>
                     <connections>
                         <outlet property="parkTableView" destination="ccN-IT-HNe" id="30K-bL-RjG"/>
                     </connections>
@@ -141,7 +143,7 @@
         <!--列表-->
         <scene sceneID="HAu-aH-DVw">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ICf-i4-z2z" sceneMemberID="viewController">
+                <navigationController title="列表" automaticallyAdjustsScrollViewInsets="NO" id="ICf-i4-z2z" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="列表" id="bQJ-UJ-7sr"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

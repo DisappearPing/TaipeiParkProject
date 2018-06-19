@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Map View View Controller-->
+        <!--地圖-->
         <scene sceneID="DKz-6J-Sne">
             <objects>
                 <viewController id="FNK-ae-ZVO" customClass="MapViewViewController" customModule="TaipeiParkProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -34,7 +34,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="glU-uv-PjZ"/>
                     </view>
-                    <navigationItem key="navigationItem" id="k7B-2t-1DX"/>
+                    <navigationItem key="navigationItem" title="地圖" id="k7B-2t-1DX"/>
                     <connections>
                         <outlet property="mapView" destination="ekd-Ju-Hs1" id="zaW-Tx-jik"/>
                     </connections>
@@ -46,7 +46,7 @@
         <!--地圖-->
         <scene sceneID="l8M-zG-5hz">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tMT-Uo-6uW" sceneMemberID="viewController">
+                <navigationController title="地圖" automaticallyAdjustsScrollViewInsets="NO" id="tMT-Uo-6uW" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="1" title="地圖" id="wlH-zw-ZNy"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
